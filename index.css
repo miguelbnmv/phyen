@@ -1,0 +1,163 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+}
+
+.wrapper {
+ transition: background 1s ease;
+}
+
+h1 {
+ font-size: 2.5rem;
+}
+
+/*---------------------- HERO ----------------------*/
+.hero {
+ height: 90vh;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.hero img {
+ width: 30rem; 
+}
+
+.hero-info {
+ width: 40%; 
+}
+
+.hero-info h1 {
+ margin-bottom: 1rem;
+}
+
+.hero-info img {
+ width: 3rem; 
+}
+
+.hero-cta {
+ width: 16rem;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 2rem;
+}
+
+.hero-cta a {
+ text-decoration: none;
+ width: 5rem;
+ padding: 1rem;
+ border: 0.5px solid black;
+ border-radius: 0.25rem;
+ text-align: center;
+ color: black;
+ background-color: white;
+}
+
+.hero-cta a:hover {
+ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.22);
+}
+
+/*---------------------- FEATURES ----------------------*/
+.features {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.features h1 {
+ margin: 10rem 0 5rem;
+}
+
+.features-all {
+ width: 90vw;
+ min-height: 100vh;
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-around;
+}
+
+.features-all > img {
+ width: 300px;
+ align-self: flex-start;
+}
+
+.features-column {
+ width: 30vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.feature-info {
+ display: flex;
+ align-items: center;
+}
+
+.feature-info img {
+ width: 100px;
+ margin-right: 2rem;
+}
+
+/*---------------------- CTA ----------------------*/
+.cta {
+ height: 90vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.cta h1 {
+ margin-bottom: 1rem;
+}
+
+.cta p {
+ width: 50vw;
+}
+
+.cta h1 {
+ display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+ h1 {
+  font-size: 2rem;
+ }
+
+ .hero-info {
+  width: 80vw; 
+ }
+
+ .hero img {
+  display: none;
+ }
+
+ .features-all {
+  flex-direction: column;
+ }
+
+ .features-all > img {
+  display: none;
+ }
+
+ .features-column {
+  width: 80vw;
+ }
+
+ .feature-info {
+  margin: 1rem 0;
+ }
+
+ .cta {
+  height: 90vw;
+ }
+
+ .cta p {
+  width: 80vw;
+ }
+}
+

@@ -1,0 +1,240 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+ scroll-behavior: smooth;
+}
+
+.wrapper {
+ transition: background 1s ease;
+}
+
+h1 {
+ font-size: 2.5rem;
+}
+
+/*---------------------- HERO ----------------------*/
+.hero {
+ height: 90vh;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.hero img {
+ width: 35rem;
+}
+
+.hero-info {
+ width: 40%;
+}
+
+.hero-info img {
+ width: 20rem;
+}
+
+.hero-info h1 {
+ margin-bottom: 1rem;
+}
+
+.hero-info p {
+ margin-bottom: 1rem;
+}
+
+.hero-info a {
+ color: black;
+}
+
+.hero-info a:hover {
+ color: white;
+ text-decoration: none;
+}
+
+.hero-cta {
+ width: 25rem;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 2rem;
+}
+
+.hero-cta p {
+ width: 10rem;
+ padding: 0.5rem 0;
+ margin: 0;
+ border: 4px solid black;
+ border-radius: 4px;
+ text-align: center;
+ background-color: transparent;
+}
+
+.hero-cta p:hover {
+ background-color: white;
+}
+
+/*---------------------- FEATURES ----------------------*/
+.features {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.features h1 {
+ margin: 10rem 0 5rem;
+}
+
+.features-all {
+ width: 90vw;
+ min-height: 100vh;
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-around;
+}
+
+.feature-exposed {
+ width: 19rem;
+ height: 100vh;
+ background-image: url("../img/booking.png");
+ background-size: contain;
+ background-repeat: no-repeat;
+}
+
+.features-column {
+ width: 30vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.feature-info {
+ display: flex;
+ margin: 2rem 0;
+}
+
+.feature-info img {
+ width: 5rem;
+ margin-right: 2rem;
+ align-self: center;
+}
+
+/*---------------------- CTA ----------------------*/
+.cta {
+ height: 50vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.cta h1 {
+ display: none;
+}
+
+.cta h3 {
+ margin-top: 1rem;
+}
+
+.cta-info {
+ text-align: center;
+}
+
+form {
+ width: 30vw;
+ height: 22vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin-top: 2rem;
+}
+
+input[type=text],
+input[type=email] {
+ background-color: transparent;
+ border: none;
+ border-bottom: 4px solid black;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=submit]:focus {
+ outline: none;
+}
+
+input[type=submit] {
+ width: 5rem;
+ align-self: flex-end;
+ padding: 0.5rem 0;
+ border: 4px solid black;
+ border-radius: 4px;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+input[type=submit]:hover {
+ background-color: white;
+}
+
+@media screen and (max-width: 992px) {
+ h1 {
+  font-size: 2rem;
+ }
+
+ .hero-info {
+  width: 80vw;
+ }
+
+ .hero img {
+  display: none;
+ }
+
+ .hero-info img {
+  display: block;
+ }
+
+ .hero-cta {
+  display: none;
+ }
+
+ .features-all {
+  flex-direction: column;
+ }
+
+ .feature-exposed {
+  display: none;
+ }
+
+ .features h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+ }
+
+ .features-column {
+  width: 100%;
+ }
+
+ .feature-info img {
+  width: 3rem;
+  margin-right: 1rem;
+ }
+
+ .feature-info {
+  margin: 1rem 0;
+ }
+
+ .cta {
+  height: 100vh;
+ }
+
+ .cta-info {
+  width: 90vw;
+ }
+
+ form {
+  width: 50vw;
+ }
+
+ input[type=submit]{
+  margin-top: 1rem;
+ }
+}

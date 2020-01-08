@@ -1,0 +1,206 @@
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <title>EART: Mind your footprint</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <link href="assets/css/index.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="node_modules/in-view/dist/in-view.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="hero" data-background-color="#D7F0BC">
+      <img src="assets/img/hero.png"" alt=" App's mockups" />
+      <div class="hero-info">
+        <img src="assets/img/EART.svg"/>
+        <h1>
+          There’s only one planet.</br>Mind your footprint.
+        </h1>
+        <p>
+          Be aware of the impact of your stays.</br>
+          EART shows your energy and water consumption and how to reduce your impact.</br>
+          Get rewards and be more sustainable.</br>
+        </p>
+        <a href="#cta">
+          Start reducing your footprint
+        </a>
+        <div class="hero-cta">
+          <p class="playstore">Playstore</p>
+          <p class="ios">iOS</p>
+        </div>
+      </div>
+    </section>
+    <section class="features" data-background-color="#D7F0BC">
+      <h1>
+        Summary of Key Features
+      </h1>
+      <div class="features-all">
+        <div class="features-column">
+          <div class="feature-info" id="monitoring">
+            <img src="assets/img/analytics.png" alt="Feature's icon" />
+            <div>
+              <h3>Stay Monitoring</h3>
+              <p>Connect your stay, and we show you your energy and water consumption. See each day, hour to hour, and a
+                summary of the entire stay. Keep track of all your visits.</p>
+            </div>
+          </div>
+          <div class="feature-info" id="footprint">
+            <img src="assets/img/growth.png" alt="Feature's icon" />
+            <div>
+              <h3>Ecological Footprint Rating</h3>
+              <p>We calculate your footprint based on your consumptions and hotel characteristics. See how you compare
+                with sustainable levels.</p>
+            </div>
+          </div>
+          <div class="feature-info" id="tips">
+            <img src="assets/img/chat.png" alt="Feature's icon" />
+            <div>
+              <h3>Improvement Tips and Suggestions</h3>
+              <p>Based on your rating, we will help you do better. Learn tips and tricks on how to save energy and water
+                for your next stays and your daily routine. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-exposed"></div>
+
+        <div class="features-column">
+          <div class="feature-info" id="scoreboard">
+            <img src="assets/img/scoreboard.png" alt="Feature's icon" />
+            <div>
+              <h3>Points and Levels System</h3>
+              <p>By being sustainable we reward you with points. Lots of points. Keep performing and level up to help
+                save the planet.</p>
+            </div>
+          </div>
+          <div class="feature-info" id="friends">
+            <img src="assets/img/support.png" alt="Feature's icon" />
+            <div>
+              <h3>Friends and Corporate Competition</h3>
+              <p>Never lose sight of how sustainable your friends are. Compete with them for more points and rewards.
+                Or, if you are going on a corporate retreat, challenge your colleagues to be the ultimate sustainable
+                guest.</p>
+            </div>
+          </div>
+          <div class="feature-info" id="rewards">
+            <img src="assets/img/medal.png" alt="Feature's icon" />
+            <div>
+              <h3>Reward Marketplace</h3>
+              <p>You have accumulated your points, and now you are wondering what to do with them? Find out the
+                incredible, and sustainable rewards our partners have lined up for you, and carry the green vibe with
+                you all the time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta" id="cta" data-background-color="#fcf9ea">
+      <h1>
+        CTA
+      </h1>
+      <div class="cta-info">
+        <p>
+          Get to know more about EART and be the first to know when it launches.
+        </p>
+        <h3>
+          Start reducing your footprint
+        </h3>
+      </div>
+      <form action="https://formspree.io/maynbzly" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        <input type="submit" value="Send">
+      </form>
+    </section>
+    <footer>
+
+    </footer>
+  </div>
+</body>
+
+</html>
+
+
+<script>
+  var $target = $('.wrapper');
+  inView('section').on('enter', function (el) {
+    var color = $(el).attr('data-background-color');
+    $target.css('background-color', color);
+  });
+
+  $(".playstore")
+  .mouseover(function() {
+    $(this).text("Coming Soon");
+  })
+  .mouseout(function() {
+    $(this).text("AppStore");
+  });
+
+  $(".ios")
+  .mouseover(function() {
+    $(this).text("Coming Soon");
+  })
+  .mouseout(function() {
+    $(this).text("iOS");
+  });
+
+  $("#monitoring")
+  .mouseover(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/monitoring.png')");  
+
+  })
+  .mouseout(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/booking.png')");  
+  });
+
+  $("#footprint")
+  .mouseover(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/ecological.png')");  
+
+  })
+  .mouseout(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/booking.png')");  
+  });
+
+  $("#tips")
+  .mouseover(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/tips.png')");  
+
+  })
+  .mouseout(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/booking.png')");  
+  });
+  
+  $("#scoreboard")
+  .mouseover(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/points.png')");  
+
+  })
+  .mouseout(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/booking.png')");  
+  });
+
+  $("#friends")
+  .mouseover(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/friends.png')");  
+
+  })
+  .mouseout(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/booking.png')");  
+  });
+
+  $("#rewards")
+  .mouseover(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/reward.png')");  
+
+  })
+  .mouseout(function() {
+    $('.feature-exposed').css("background-image", "url('assets/img/booking.png')");  
+  });
+</script>
